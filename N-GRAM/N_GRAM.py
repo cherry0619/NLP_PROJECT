@@ -17,10 +17,8 @@ from tqdm import tqdm
 
 
 # ------------------------------------------------------------------------------------------------------------
-img_path ='/hot-data-ceph/user-data/libo/seewo-project/bidding/structed_data/info_file_rel-20200814.csv'
+img_path ='your file path'
 df =pd.read_csv(img_path)
-df['format'] = df['extracted_sub_path'].apply(lambda x :str(x).split('.')[-1])
-df['abs_path'] ='/hot-data-ceph/user-data/libo/seewo-project/bidding/' +df['extracted_sub_path']
 # ------------------------------------------------------------------------------------------------------------
 
 
